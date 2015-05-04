@@ -24,3 +24,18 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
+#pragma once
+
+namespace dispatch {
+
+    /**
+     * This class is used via the <code>dispatcher</code> as the dispatchable object. 
+     * It allows engine components to communicate via subscription and delegation.
+     */
+    class signal {
+        public: 
+            virtual ~signal() = 0;
+    };
+
+    inline signal::~signal() { }
+};

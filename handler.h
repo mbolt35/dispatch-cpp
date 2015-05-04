@@ -24,3 +24,16 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
+#pragma once
+
+namespace dispatch {
+
+    /**
+     * This implementation prototype is used as the subtype for all handling classes. 
+     */
+    struct handler {
+        virtual ~handler() = 0;
+    };
+
+    inline handler::~handler() { }
+};
