@@ -32,7 +32,7 @@
 #include "helpers.h"
 
 
-namespace rox {
+namespace dispatch {
   
     /**
      * The listener class is the global wrapper for all listening function types awaiting signals. These
